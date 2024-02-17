@@ -23,6 +23,10 @@ import {
   UpdatedComponet,
 } from "./components/challegs/HOC";
 import { ProgressBar } from "./components/challegs/ProgressBar";
+import { OTP } from "./components/challegs/OTP";
+import { DynamicOTP } from "./components/challegs/DynamicOTP";
+import { Curring } from "./components/challegs/Curring";
+import { BeforeAfterCss } from "./components/challegs/BeforeAfterCss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -42,7 +46,11 @@ root.render(
     {/* <StopWatch/> */}
     {/* <MyComponent text={"hi i am shiam"}/> */}
     {/* <HOC/> */}
-    <ProgressBar />
+    {/* <ProgressBar /> */}
+    {/* <OTP/>  */}
+    {/* <DynamicOTP /> */}
+    <Curring />
+    {/* <BeforeAfterCss/> */}
   </>
 );
 

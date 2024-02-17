@@ -2,12 +2,24 @@
   height: 60px;
   width: 60px;
 }
-.table{
+.table {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap:20px
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
-.item{
+.item {
   text-align: center;
   border: 0px;
+}
+
+.myDiv {
+  display: flex;
+  justify-content: center;
+}
+.myDiv::before {
+  content: "vivek";
+  height: 95px;
+  width: 90px;
+  border: 1px solid red;
+  box-sizing: border-box;
 }
