@@ -63,5 +63,34 @@ export const Curring = () => {
   };
   console.log(nParaSum(1, 5, 21, 22)(45, 5), "n para");
 
+
+
+
+
+
+
+//nsum with recursion ye n number k liye chal rha h
+  const sumFun = (...args1) => {
+    return (...args2) => {
+      return args2.length > 0
+        ? sumFun(
+            args1.reduce((a, value) => a + value) +
+              args2.reduce((a, value) => a + value)
+          )
+        : args1.reduce((a, value) => a + value);
+
+   
+    };
+  };
+  const s = sumFun(10, 20, 30,12)(30, 30)(1,1)(33,99)();
+  console.log(s, "dssd");
+  function makeUser(){
+    return {
+      name:"shivam",
+      ref:this
+    }
+  }
+  let user=makeUser()
+  console.log(user.ref.name)
   return <div>Curring</div>;
 };

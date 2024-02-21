@@ -27,6 +27,10 @@ import { OTP } from "./components/challegs/OTP";
 import { DynamicOTP } from "./components/challegs/DynamicOTP";
 import { Curring } from "./components/challegs/Curring";
 import { BeforeAfterCss } from "./components/challegs/BeforeAfterCss";
+import { BindPolifill } from "./components/challegs/BindPolifill";
+import { PromiseAllPolyfill } from "./components/challegs/Promise.allPolyfill";
+import { RemoveReferace } from "./components/challegs/removeReferace";
+import { EventBubling, MapFilterPolyFill } from "./components/challegs/MapFilterPolyfill";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -49,8 +53,12 @@ root.render(
     {/* <ProgressBar /> */}
     {/* <OTP/>  */}
     {/* <DynamicOTP /> */}
-    <Curring />
+    {/* <Curring /> */}
     {/* <BeforeAfterCss/> */}
+    {/* <BindPolifill/> */}
+    {/* <PromiseAllPolyfill/> */}
+    {/* <RemoveReferace/> */}
+    <MapFilterPolyFill />
   </>
 );
 
