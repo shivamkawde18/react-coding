@@ -3,15 +3,13 @@ import React from "react";
 export const Debounce = () => {
   function debounce(func, delay) {
     let timeoutId;
-console.log(timeoutId,"id")
-    return function (...args) {
-      console.log(timeoutId,"id 33")
+    console.log(timeoutId, "id");
+    return function () {
+      console.log(timeoutId, "id 33");
       clearTimeout(timeoutId);
 
       timeoutId = setTimeout(() => {
- 
-
-        func()
+        func();
       }, delay);
     };
   }
@@ -22,11 +20,28 @@ console.log(timeoutId,"id")
   // Debounce the function with a delay of 500 milliseconds
   const debouncedFunction = debounce(myFunction, 500);
 
+  const throtling = (fn, limit) => {
+    let flag = true;
+    let timer;
+    return () => {
+      if (flag) {
+        fn();
+        flag = false;
+        // clearTimeout(timer);
+        timer = setTimeout(() => {
+          flag = true;
+        }, limit);
+      }
+    };
+  };
+
+  const optimizedMythrotling = throtling(myFunction, 3000);
+
   return (
     <input
       placeholder="type here"
       onChange={(e) => {
-        debouncedFunction()
+        optimizedMythrotling();
       }}
     ></input>
   );

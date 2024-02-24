@@ -113,29 +113,41 @@ export const Pagination = () => {
       >
         pre
       </button>
-      <div>
+      <div
+     style={{
+      display: "grid",
+      gridTemplateColumns:"1fr 1fr 1fr",
+     
+    }}
+      >
         <h2>id</h2>
         <h2>food</h2>
         <h2>price</h2>
-
+      </div>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns:"1fr 1fr 1fr",
+         
+        }}
+      >
         {currentArray.map((item, i) => {
           return (
-            <div key={i + item.price}>
-              <div
-                style={{
-                  textAlign: "center",
-                }}
-              >
-                {item.id}
-              </div>
-              {/* <div>{item.food}</div>
-              <div>{item.price}</div> */}
+            <div
+              key={i + item.price}
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <div>{item.id}</div>
+              <div>{item.food}</div>
+              <div>{item.price}</div>
             </div>
           );
         })}
-
-        {}
       </div>
+      {}
     </div>
   );
 };

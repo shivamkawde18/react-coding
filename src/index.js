@@ -31,12 +31,13 @@ import { BindPolifill } from "./components/challegs/BindPolifill";
 import { PromiseAllPolyfill } from "./components/challegs/Promise.allPolyfill";
 import { RemoveReferace } from "./components/challegs/removeReferace";
 import { EventBubling, MapFilterPolyFill } from "./components/challegs/MapFilterPolyfill";
+import { Promisify } from "./components/challegs/Promisify";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
     {/* <App /> */}
-    {/* <Debounce/> */}
+    <Debounce/>
     {/* <Counter/> */}
     {/* <AnagramString /> */}
     {/* <ImageGallery /> */}
@@ -58,7 +59,8 @@ root.render(
     {/* <BindPolifill/> */}
     {/* <PromiseAllPolyfill/> */}
     {/* <RemoveReferace/> */}
-    <MapFilterPolyFill />
+    {/* <MapFilterPolyFill /> */}
+    {/* <Promisify/> */}
   </>
 );
 
