@@ -30,9 +30,13 @@ import { BeforeAfterCss } from "./components/challegs/BeforeAfterCss";
 import { BindPolifill } from "./components/challegs/BindPolifill";
 import { PromiseAllPolyfill } from "./components/challegs/Promise.allPolyfill";
 import { RemoveReferace } from "./components/challegs/removeReferace";
-import { EventBubling, MapFilterPolyFill } from "./components/challegs/MapFilterPolyfill";
+import {
+  EventBubling,
+  MapFilterPolyFill,
+} from "./components/challegs/MapFilterPolyfill";
 import { Promisify } from "./components/challegs/Promisify";
 import { CarEMiCalculator } from "./components/challegs/CarEMiCalculator";
+import { PasswordGeneroter } from "./components/challegs/PasswordGeneroter";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -62,7 +66,8 @@ root.render(
     {/* <RemoveReferace/> */}
     {/* <MapFilterPolyFill /> */}
     {/* <Promisify/> */}
-    <CarEMiCalculator/>
+    {/* <CarEMiCalculator/> */}
+    <PasswordGeneroter />
   </>
 );
 

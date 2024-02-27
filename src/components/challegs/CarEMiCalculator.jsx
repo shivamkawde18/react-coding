@@ -31,8 +31,85 @@ export const CarEMiCalculator = () => {
 
     // const emi = calculateEmi.toFixed(0);
     // setEmi(emi);
-  }, [tenure, roi, amount,downPayment]);
+  }, [tenure, roi, amount, downPayment]);
 
+  const p1 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      reject("p1 resolve");
+    }, 300);
+  });
+
+  const p2 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      reject("p2 resolve");
+    }, 500);
+  });
+  const p3 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      reject("rehe");
+    }, 700);
+  });
+
+  // function myAllSettled(promises) {
+  //   return new Promise((resolve, reject) => {
+  //     let result = [];
+  //     let complete = promises.length;
+  //     promises.forEach((promise) => {
+  //       promise
+  //         .then((res) => {
+  //           result.push({
+  //             value: res,
+  //             status: "fulfil",
+  //           });
+  //           if (complete === 0) {
+  //             resolve(result);
+  //           }
+
+  //           complete--;
+
+  //         })
+  //         .catch((err) => {
+  //           complete--;
+  //           result.push({
+  //             reason:err ,
+  //             status: "rejected",
+  //           });
+  //           if (complete === 0) {
+  //             resolve(result);
+  //           }
+  //           complete--;
+
+  //         });
+  //     });
+  //   });
+  // }
+
+  function myRace(promises) {
+    return new Promise((resolve, reject) => {
+      promises.forEach((promise) => {
+        promise
+          .then((res) => {
+            resolve(res);
+          })
+          .catch((err) => reject(err));
+      });
+    });
+  }
+
+// function myAny(promises){
+// return new Promise((resolve,reject)=>[
+//  const result=[] 
+
+// ])
+
+// }
+
+  // myRace([p1, p2, p3])
+  //   .then((res) => console.log(res))
+  //   .catch((err) => console.log(err, "dekho"));
+  Promise.any([p1, p2, p3])
+    .then((res) => console.log(res))
+    .catch((err) => console.log(err, "dekho"));
   return (
     <div>
       <div
