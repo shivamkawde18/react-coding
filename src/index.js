@@ -37,6 +37,7 @@ import {
 import { Promisify } from "./components/challegs/Promisify";
 import { CarEMiCalculator } from "./components/challegs/CarEMiCalculator";
 import { PasswordGeneroter } from "./components/challegs/PasswordGeneroter";
+import { UseMemoPollyfill } from "./components/challegs/UseMemoPollyfill";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -67,7 +68,8 @@ root.render(
     {/* <MapFilterPolyFill /> */}
     {/* <Promisify/> */}
     {/* <CarEMiCalculator/> */}
-    <PasswordGeneroter />
+    {/* <PasswordGeneroter /> */}
+    <UseMemoPollyfill/>
   </>
 );
 

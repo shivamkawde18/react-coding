@@ -71,5 +71,41 @@ export const FollyfillforFlatmethod = () => {
   const coposedFun = compose(addFive, subTract2, multiply4);
   console.log(coposedFun(5));
 
+
+
+
+
+
+  const arr=[
+    
+    [1,2,3,[23]],
+    [4,[5],6],
+    [7,8,9]
+    ]
+    
+    //by limit
+    const flatArray=(arr,limt)=>{
+        let result=[]
+        
+        for(let i=0;i<arr.length;i++){
+            
+             if(Array.isArray(arr[i])&&limt>0){
+                 const tempArray=flatArray(arr[i],limt-1)
+                 
+                 result=[...result,...tempArray]
+             }
+             else{
+                 result.push(arr[i])
+             }
+            
+        }
+        return result
+        
+    }
+    
+    
+    
+    console.log(flatArray(arr,1))
+
   return <div>FollyfillforFlatmethod</div>;
 };
