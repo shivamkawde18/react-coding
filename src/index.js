@@ -38,6 +38,8 @@ import { Promisify } from "./components/challegs/Promisify";
 import { CarEMiCalculator } from "./components/challegs/CarEMiCalculator";
 import { PasswordGeneroter } from "./components/challegs/PasswordGeneroter";
 import { UseMemoPollyfill } from "./components/challegs/UseMemoPollyfill";
+import { ColorChanger } from "./components/challegs/ColorChanger";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -69,7 +71,10 @@ root.render(
     {/* <Promisify/> */}
     {/* <CarEMiCalculator/> */}
     {/* <PasswordGeneroter /> */}
-    <UseMemoPollyfill/>
+    {/* <UseMemoPollyfill/> */}
+    {/* <TimerChallenge/> */}
+    <ColorChanger/>
+    
   </>
 );
 

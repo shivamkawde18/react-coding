@@ -22,13 +22,13 @@ export const Debounce = () => {
 
   const throtling = (fn, limit) => {
     let flag = true;
-    let timer;
+ 
     return () => {
       if (flag) {
         fn();
         flag = false;
         // clearTimeout(timer);
-        timer = setTimeout(() => {
+     setTimeout(() => {
           flag = true;
         }, limit);
       }

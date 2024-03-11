@@ -38,7 +38,6 @@ export const useMemoCustom = (callback, dependency) => {
 };
 //custom  use callback
 export const useCustomCallback = (callback, dependency) => {
-  
   const isEqual = (pre, current) => {
     if (pre === null) return false;
     if (pre.length !== current.length) return false;
@@ -50,7 +49,7 @@ export const useCustomCallback = (callback, dependency) => {
   };
 
   const ref = useRef(null);
-  console.log(ref)
+  console.log(ref);
 
   if (ref.current === null || !isEqual(ref.current.dependency, dependency)) {
     ref.current = {
@@ -61,4 +60,5 @@ export const useCustomCallback = (callback, dependency) => {
 
   return ref.current.value;
 };
+
 
