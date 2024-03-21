@@ -39,6 +39,7 @@ import { CarEMiCalculator } from "./components/challegs/CarEMiCalculator";
 import { PasswordGeneroter } from "./components/challegs/PasswordGeneroter";
 import { UseMemoPollyfill } from "./components/challegs/UseMemoPollyfill";
 import { ColorChanger } from "./components/challegs/ColorChanger";
+import OrderBook from "./components/challegs/QunceTest2";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -56,7 +57,7 @@ root.render(
     {/* <PhoneNumberValidetor /> */}
     {/* <TraficLight /> */}
     {/* <TostPopUp /> */}
-    {/* <StopWatch/> */}
+    <StopWatch/>
     {/* <MyComponent text={"hi i am shiam"}/> */}
     {/* <HOC/> */}
     {/* <ProgressBar /> */}
@@ -73,7 +74,8 @@ root.render(
     {/* <PasswordGeneroter /> */}
     {/* <UseMemoPollyfill/> */}
     {/* <TimerChallenge/> */}
-    <ColorChanger/>
+    {/* <ColorChanger/> */}
+    {/* <OrderBook/> */}
     
   </>
 );

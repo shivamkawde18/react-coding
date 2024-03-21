@@ -11,8 +11,8 @@ export const StopWatch = () => {
 
     if (timeFun) {
       timer = setInterval(() => {
-        setTime((pre) => pre + 10);
-      }, 10);
+        setTime((pre) => pre + 100);
+      }, 100);
     } else {
       clearInterval(timer);
     }
