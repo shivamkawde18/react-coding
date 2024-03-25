@@ -40,6 +40,9 @@ import { PasswordGeneroter } from "./components/challegs/PasswordGeneroter";
 import { UseMemoPollyfill } from "./components/challegs/UseMemoPollyfill";
 import { ColorChanger } from "./components/challegs/ColorChanger";
 import OrderBook from "./components/challegs/QunceTest2";
+import { TicTacToGame } from "./components/challegs/TicTacToGame";
+import { TekionTimerInput } from "./components/challegs/TekionTimerInput";
+import { TwoDMatrixunactive } from "./components/challegs/TwoDMatrixunactive";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -57,7 +60,7 @@ root.render(
     {/* <PhoneNumberValidetor /> */}
     {/* <TraficLight /> */}
     {/* <TostPopUp /> */}
-    <StopWatch/>
+    {/* <StopWatch/> */}
     {/* <MyComponent text={"hi i am shiam"}/> */}
     {/* <HOC/> */}
     {/* <ProgressBar /> */}
@@ -76,7 +79,9 @@ root.render(
     {/* <TimerChallenge/> */}
     {/* <ColorChanger/> */}
     {/* <OrderBook/> */}
-    
+    {/* <TicTacToGame/> */}
+    {/* <TekionTimerInput/> */}
+    <TwoDMatrixunactive/>
   </>
 );
 

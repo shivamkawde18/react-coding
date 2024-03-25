@@ -23,3 +23,15 @@
   border: 1px solid red;
   box-sizing: border-box;
 }
+
+.row{
+  display: flex;
+  border: 1px solid;
+  height: 30px;
+  width: 90px;
+}
+.content{
+  height: 30px;
+  width: 30px;
+  border: 1px solid;
+}
