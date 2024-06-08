@@ -76,6 +76,51 @@ export const FollyfillforFlatmethod = () => {
 
 
 
+
+
+
+
+
+
+
+
+  // const add=(val)=>{
+//     return val+2
+// }
+
+// const square=(val)=>{
+//     return val*val
+// }
+
+// const compose=(...fns)=>{
+//     return (para)=>{
+//         const ans=fns.reduce((current,a)=> current(para) ,a)
+//         return ans
+//     }
+// }
+// const fn=compose(add,square)
+// console.log(fn(2))
+const add = (val) => {
+  return val + 2; // Corrected the return statement
+}
+
+const square = (val) => {
+  return val * val;
+}
+
+const compose2 = (...fns) => {
+  return (para) => {
+      return fns.reduce((current,fn) =>fn(current) ,para); // Pass the result of the previous function as input to the next function
+  }
+}
+
+const fn = compose2(add, square);
+console.log(fn(2)); // Output should be 6 (2*2 + 2)
+
+
+
+
+
   const arr=[
     
     [1,2,3,[23]],

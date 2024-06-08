@@ -16,6 +16,7 @@ import { PhoneNumberValidetor } from "./components/challegs/PhoneNumberValidetor
 import { TraficLight } from "./components/challegs/TraficLight";
 import { TostPopUp } from "./components/challegs/TostPopUp";
 import { StopWatch } from "./components/challegs/StopWatch";
+import Vimeo from '@u-wave/react-vimeo';
 import {
   EnhancedComponent,
   HOC,
@@ -43,6 +44,13 @@ import OrderBook from "./components/challegs/QunceTest2";
 import { TicTacToGame } from "./components/challegs/TicTacToGame";
 import { TekionTimerInput } from "./components/challegs/TekionTimerInput";
 import { TwoDMatrixunactive } from "./components/challegs/TwoDMatrixunactive";
+
+import { MainFileExpoler } from "./components/challegs/file/MainFileExpoler";
+import { StepperComponent } from "./components/challegs/StepperComponent";
+import { EnfiniteScroll } from "./components/challegs/EnfiniteScroll";
+import { Sideshow } from "./components/challegs/file/Sideshow";
+import { CutomModal } from "./components/challegs/CutomModal";
+import { AutoComplete } from "./components/challegs/AutoComplete";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -81,7 +89,25 @@ root.render(
     {/* <OrderBook/> */}
     {/* <TicTacToGame/> */}
     {/* <TekionTimerInput/> */}
-    <TwoDMatrixunactive/>
+    {/* <TwoDMatrixunactive/> */}
+    {/* <FileExploler/> */}
+    {/* <MainFileExpoler/> */}
+
+
+{/* <Vimeo
+  video="https://vimeo.com/935391748?share=copy"
+  autoplay
+  textTrack="en"
+/> */}
+{/* <StepperComponent/> */}
+{/* <EnfiniteScroll/> */}
+{/* <Sideshow/> */}
+{/* <CutomModal>
+  <h1>chal bhaak</h1>
+  <h1>chal bhaak</h1>
+  <h1>chal bhaak</h1>
+  </CutomModal> */}
+  <AutoComplete/>
   </>
 );
 

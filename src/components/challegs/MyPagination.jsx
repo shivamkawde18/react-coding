@@ -45,7 +45,6 @@ export const MyPagination = () => {
   useEffect(() => {
     if (currentIndex < arr.length) {
       setMainData(arr.slice(currentIndex, currentIndex + 3));
-
       console.log("hiii");
     }
 
